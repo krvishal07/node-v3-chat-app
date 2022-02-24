@@ -3,6 +3,7 @@ const http = require('http')
 const socketio = require('socket.io')
 const Filter=require('bad-words')
 
+const port = process.env.PORT || 8000
 const {generateMessage,generateLocationMessage} = require('./utils/messages')
 //const generateLocation = require('./utils/locationMessage')
 const users = require('./utils/users')
@@ -132,6 +133,6 @@ io.on('connection',(socket)=>{
 
 
 //to start http server
-server.listen(8000,()=>{
+server.listen(port,()=>{
     console.log('Server started...')
 })
