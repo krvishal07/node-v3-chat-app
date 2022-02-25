@@ -156,7 +156,7 @@ socket.on('roomData',({room , users})=>{
         users
     })
     document.querySelector('#sidebar').innerHTML = html
-    console.log(room)
-    console.log(users)
+    // console.log(room)
+    // console.log(users)
 
 })
